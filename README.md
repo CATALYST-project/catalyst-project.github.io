@@ -1,1 +1,1 @@
-Landing page for CATALYST at catalyst-project.github.io
+Landing page for CATALYST at https://catalyst-project.github.io
