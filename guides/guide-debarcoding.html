@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Debarcoding</title>
+    <script src="../document.min.js" userjs="user.js" icon="favicon.ico" id="DOC" onerror="var l=document.createElement('link'),s=document.createElement('script');l.rel='stylesheet';l.href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css';l.id='bootstrap.css';l.auto='1';document.head.insertBefore(l,document.getElementById('DOC'));s.src='http://aplib.github.io/document.min.js';document.head.appendChild(s);"></script>
+</head>
+<body>
+
+<!--content-panel
+**1. Upload your sample and debarcoding scheme**
+
+The barcoding scheme should be a binary matrix with sample names as row names and numeric masses as column names. Once you have uploaded your data and a valid barcoding scheme, press "Debarcode" to assign a preliminary ID to each event.
+
+<img src="screenshots/debarcoding/deba01.png" alt="Drawing" style="width:360px;"/> 
+
+Navigate between diagnostic plots to review barcode assignment quality and adjust deconvolution paraeters accordingly.
+
+**2. Applying deconvolution paramters**
+
+Upon debarcoding, separation cutoffs will be estimated automatically. Following this, you have the option to "Adjust population-specific cutoffs" or "Enter global separation cutoff". Vary the "Mahalanobis distance threshold"" above which events should be unassigned by dragging the slider and "Apply" it.
+
+<img src="screenshots/debarcoding/deba02.png" alt="Drawing" style="width:360px;"/>
+
+**3. Propagating / downloading data**
+
+By default, debarcoded samples will be named after their ID, that is, the respective row name in the input barcoding scheme CSV. Unassigned events will be writted to "unassigned.fcs" If you wish to supply alternative names, you may do so by checking "▢ Upload namig sheet (CSV)", and providing a 2 column sheet with sample IDs and the desired output filenames. Make sure **all** sample IDs are matched **exactly** with those provided in the barcoding scheme. Once you are satisfied, you may download the debarcoded samples and diagnostic plots.
+
+<img src="screenshots/debarcoding/deba03.png" alt="Drawing" style="width:360px;"/>
+
+***
+
+- ** Yield plot**
+
+Shows the distribution of barcode separations and yields upon debarcoding as a function of separation cutoffs. Commonly, this function will be characterized by an initial weak decline, where doublets are excluded, and subsequent rapid decline in yields to zero. Inbetween, low numbers of counts with intermediate barcode separation give rise to a plateau. As an adequate cutoff estimate, one should target a point that marks the end of the plateau regime and on-set of yield decline to appropriately balance confidence in barcode assignment and cell yield.
+
+<img src="screenshots/debarcoding/yieldPlot.png" alt="Drawing" style="width:50%;"/> 
+
+- **Event plot**
+
+Shows intensities of a given sample normalized to the 95% quantile of the barcode population. Each event corresponds to the intensities plotted on a vertical line at a given point along the x-axis. ID 0 will display unassigned events.
+
+<img src="screenshots/debarcoding/eventPlot.png" alt="Drawing" style="width:50%;"/>
+
+- **Mahal plot**
+
+Shows all inter-barcode interactions for the selected sample. Events are colored by their Mahalanobis distance from the population they were assigned to.
+
+<img src="screenshots/debarcoding/mahalPlot.png" alt="Drawing" style="width:50%;"/>
+-->
+
+<!--footer-panel
+***
+# Reference
+<a href="http://onlinelibrary.wiley.com/doi/10.1002/cyto.a.22271/abstract"> Zunder et al. (2015), *Palladium-based mass tag cell barcoding with a doublet-filtering scheme and single-cell deconvolution algorithm*. Nature Protocols. **10**, 316–333. </a>
+-->
+
+<noscript><div class="alert alert-warning">This Website requires your browser to be JavaScript enabled.</div></noscript>
+</body>
+</html>
