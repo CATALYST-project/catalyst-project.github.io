@@ -36,9 +36,10 @@
 <div class="content-panel" id="30d43">
     <h2> Getting started </h2>
     <p> There are various entry points to using the CATALYST tools.  If you are an R user, we recommend using the functions from the R package itself, from the command line or via a script.  If you want to use the graphical environment, we recommend to run it locally on your own computer, as this will be faster and in terms of dataset sizes, is only limited by the resources on your computer.  To do this, you will need to install recent versions of R and the necessary R packages (details below).  If installing all the necessary R packages is a hurdle, you can use the hosted version. </p>
-    
-    <h2> Installation </h2>
-    <pre> 
+
+    <h2> Using the R package </h2>
+    <p> A stable release version is available at <a href="http://bioconductor.org/packages/CATALYST">Bioconductor</a>. For detailed examples and usage instructions, <a href="http://bioconductor.org/packages/devel/bioc/vignettes/CATALYST/inst/doc/vignette.html">see the package vignette</a>. To install the most current version, run
+        <pre> 
 # install dependencies     
 source("https://bioconductor.org/biocLite.R")
 biocLite(c("drc","flowCore","ggplot2","gridExtra",
@@ -50,21 +51,23 @@ biocLite(c("drc","flowCore","ggplot2","gridExtra",
 
 # install CATALYST
 devtools::install_github("HelenaLC/CATALYST", ref="shiny")
-
-# run the app
-CATALYST::launchGUI()
-    </pre>
+        </pre>
+    </p> 
     
-    <h2> Using the R package </h2>
-    <p> <a href="http://bioconductor.org/packages/devel/bioc/vignettes/CATALYST/inst/doc/vignette.html"> 
-    See the package vignette </a> for detailed examples and usage instructions. </p>
+    
+    <h2> Using the GUI </h2>
+   
+    <ul>
+        <li>to use the Shiny app locally, run <code>CATALYST::launchGUI()</code> inside an R session</li>
+        <li>go to <a href="http://imlspenticton.uzh.ch:3838/CATALYSTLite/</li>">CATALYSTLite</a> to use the app online</li>
+    </ul>
     
     <h2> Something bugging you? </h2>
     CATALYST is still under active development. We greatly welcome (and highly encourage!) all feedback, bug reports and suggestions for improvement. 
     
     <ul>
+        <li>R package related issues should be posted to the  <a href="https://support.bioconductor.org">Bioconductor support site</a></li>
         <li>Shiny related issues should be raised <a href="https://github.com/HelenaLC/CATALYST/issues">here</a></li>
-        <li>R package realted issues should be posted to the  <a href="https://support.bioconductor.org">Bioconductor support site</a></li>
         <li>for general questions and feedback, please contact us directly via email</li>
     </ul>
     
@@ -82,7 +85,15 @@ CATALYST::launchGUI()
     </ul>
 </div>
 
-<div class="right-side-panel" id="30d54"></div>
+<div class="right-side-panel" id="30d54">
+    <h2> Links </h2>
+    <ul> 
+        <li>The preprint to this project is accesible on <a href="http://www.biorxiv.org/content/early/2017/09/07/185744">bioRxiv</a></li>
+        <li>Out poster to be presented at the 13th [BC]2 - Basel Computational Biology Conference 2017 is available on <a href="https://f1000research.com/posters/6-1662">F1000Research</a></li>
+    </ul>
+    
+    
+</div>
 
 <div class="footer-panel" id="30d5e">
     <ul class="cfl-line-container">
