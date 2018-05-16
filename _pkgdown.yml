@@ -1,0 +1,75 @@
+url: http://valr.hesselberthlab.org
+
+template:
+  params:
+    bootswatch: simplex
+    ganalytics: UA-54095998-3
+
+development:
+  version_tooltip: "Release version"
+
+navbar:
+  structure:
+    right: [robinson, bodenmiller]
+  components:
+    home: ~
+    reference:
+      text: Documentation
+    articles:
+      text: Guides
+    news:
+      text: News
+    robinson:
+      text: Robinson Lab
+      href: http://www.imls.uzh.ch/en/research/robinson.html
+    bodenmiller:
+      text: Bodenmiller Lab
+      href: http://www.bodenmillerlab.org
+  
+reference:
+  - title: Example data
+    contents:
+    - data
+   
+  - title: Concatenation & Normalization
+    contents:
+    - concatFCS
+    - normCytof
+    
+  - title: Debarcoding
+    contents:
+    - dbFrame-class
+    - assignPrelim
+    - estCutoffs
+    - applyCutoffs
+    - plotYields
+    - plotEvents
+    - plotMahal
+    - outFrames
+    - outFCS
+   
+  - title: Compensation
+    contents:
+    - computeSpillmat
+    - adaptSpillmat
+    - plotSpillmat
+    - compCytof
+
+  - title: Differential Analysis
+    contents:
+    - daFrame-class
+    - guessPanel
+    - plotCounts
+    - plotExprs
+    - plotMedExprs
+    - plotExprHeatmap
+    - plotMDS
+    - plotNRS
+    - tSNE
+    - plotSNE
+    - cluster
+    - mergeClusters
+    - plotCodes
+    - plotAbundances
+    - plotClusterHeatmap
+    - plotDiffHeatmap

@@ -1,0 +1,10 @@
+pandoc: 2.1.3
+pkgdown: 1.0.0
+pkgdown_sha: ~
+articles:
+  differential_analysis: differential_analysis.html
+  preprocessing: preprocessing.html
+urls:
+  reference: http://valr.hesselberthlab.org/reference
+  article: http://valr.hesselberthlab.org/articles
+
