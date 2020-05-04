@@ -31,7 +31,7 @@ There are various entry points to using the CATALYST tools. If you are an R user
 
 - **Using the R package**
   - A stable release version is available at [Bioconductor](http://bioconductor.org/packages/CATALYST).
-  - For detailed examples and usage instructions, see the package vignettes under **Articels**.
+  - For detailed examples and usage instructions, see the package vignettes under **Articles**.
   
 - **Using the GUI**
   - To use the Shiny app locally, run `CATALYST::launchGUI()` inside an R session.
